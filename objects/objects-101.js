@@ -15,7 +15,7 @@ console.log(`${myBook.title} by ${myBook.author}`)
 // name, age, location
 
 let thisGuy = {
-    name: 'Isaac',
+    name: 'Garth',
     age: 25,
     location: 'Philadelphia'
 }

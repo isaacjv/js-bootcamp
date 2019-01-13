@@ -1,5 +1,5 @@
 let myAccount = {
-    name: 'Isaac Votta',
+    name: 'Garth Vader',
     expenses: 0,
     income: 0
 }
