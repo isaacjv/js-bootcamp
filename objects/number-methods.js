@@ -11,7 +11,7 @@ let min = 1
 let max = 5
 let randomNum = Math.floor(Math.random() * (max-min + 1)) + min
 
-// Challenge area
+// hallenge area
 
 // 1 - 5: true if correct, false if not correct
 
