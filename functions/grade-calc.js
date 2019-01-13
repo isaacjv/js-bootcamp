@@ -4,8 +4,8 @@
 
 
 
-let gradeCalc = function(studentScore, maxScore) {
-    let numericScore =  (studentScore / maxScore) * 100
+const gradeCalc = function(studentScore, maxScore) {
+    const numericScore =  (studentScore / maxScore) * 100
     let letterGrade = null
     if(numericScore >= 90) {
         letterGrade = 'A'
@@ -21,9 +21,9 @@ let gradeCalc = function(studentScore, maxScore) {
     return `You got a ${letterGrade} (${numericScore}%)!`
 }
 
-let score1 = gradeCalc(15, 20)
-let score2 = gradeCalc(99, 100)
-let score3 = gradeCalc(13, 65)
+const score1 = gradeCalc(15, 20)
+const score2 = gradeCalc(99, 100)
+const score3 = gradeCalc(13, 65)
 
 console.log(score1)
 console.log(score2)
