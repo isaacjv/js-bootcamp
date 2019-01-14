@@ -8,4 +8,7 @@ todos.push('take out the trash')
 todos.shift()
 
 console.log(`You have ${todos.length} todos on your list today`)
-console.log(todos)
+//print all the items left to do 
+todos.forEach(function (todo, index) {
+    console.log(`${index + 1}. ${todo}`)
+})
