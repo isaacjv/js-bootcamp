@@ -1,5 +1,15 @@
 const notes = ['Note 1', 'get milk', 'feed the dog']
 
-console.log(notes.length)
+// console.log(notes.pop())
+// notes.push('My New Note')
 
-console.log(notes[notes.length - 1])
+// console.log(notes.shift())
+// notes.unshift('My First note')
+
+// notes.splice(1, 1, 'This is the new second item')
+
+notes[2] = 'This is now the new note 3'
+
+console.log(notes.length)
+console.log(notes)
+
