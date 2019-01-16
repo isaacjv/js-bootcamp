@@ -13,16 +13,27 @@ const todos = [{
  }, {
     name: 'go to the gym',
     isComplete: false
- }]
+ }];
 
 // 2. Allow us to remove a to-do by text value
 
 const deleteTodo = function (todoList, task) {
     const index = todos.findIndex(function (todo) {
-        return todo.name.toLowerCase() === task.toLowerCase()
+        return todo.name.toLowerCase() === task.toLowerCase();
     })
-    todoList.splice(index, 1)
+    if (index != -1) {
+        todoList.splice(index, 1);
+    }
 }
 
-deleteTodo(todos, 'Get Milk')
-console.log(todos)
+const getThingsToDo = function(todoList) {
+    return todoList.filter(function (task, index) {
+        return task.isComplete === false;
+    })
+}
+
+
+console.log(getThingsToDo(todos));
+
+// deleteTodo(todos, 'Get Milk')
+// console.log(todos)
