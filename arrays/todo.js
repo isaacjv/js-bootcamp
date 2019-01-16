@@ -1,14 +1,28 @@
-const todos = ['make bed', 'brush teeth', 'get milk', 'walk the dog', 'go to the gym']
+const todos = [{
+    name: 'make bed',
+    isComplete: false
+ }, {
+    name: 'brush teeth',
+    isComplete: true
+}, {
+    name: 'get milk',
+    isComplete: true
+}, {
+    name: 'walk the dog',
+    isComplete: false
+ }, {
+    name: 'go to the gym',
+    isComplete: false
+ }]
 
-// delete the third item ( get milk )
-todos.splice(2, 1)
-// add a new item to the end
-todos.push('take out the trash')
-// remove the first item from the list
-todos.shift()
+// 2. Allow us to remove a to-do by text value
 
-console.log(`You have ${todos.length} todos on your list today`)
-//print all the items left to do 
-todos.forEach(function (todo, index) {
-    console.log(`${index + 1}. ${todo}`)
-})
+const deleteTodo = function (todoList, task) {
+    const index = todos.findIndex(function (todo) {
+        return todo.name.toLowerCase() === task.toLowerCase()
+    })
+    todoList.splice(index, 1)
+}
+
+deleteTodo(todos, 'Get Milk')
+console.log(todos)
