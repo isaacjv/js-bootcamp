@@ -18,7 +18,7 @@ const todos = [{
 // 2. Allow us to remove a to-do by text value
 
 const deleteTodo = function (todoList, task) {
-    const index = todos.findIndex(function (todo) {
+    const index = todos.findIndex(function (todo) {index
         return todo.name.toLowerCase() === task.toLowerCase();
     })
     if (index != -1) {
@@ -34,6 +34,3 @@ const getThingsToDo = function(todoList) {
 
 
 console.log(getThingsToDo(todos));
-
-// deleteTodo(todos, 'Get Milk')
-// console.log(todos)

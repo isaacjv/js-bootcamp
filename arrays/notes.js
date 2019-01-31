@@ -14,6 +14,7 @@ const findNote = function (notes, noteTitle) {
         return note.Title.toLowerCase() === noteTitle.toLowerCase();
     })
 }
+
 const findNotes = function (notes, textToSearch) {
     return notes.filter(function (note, index) {
         const isTitleMatch = note.Title.toLowerCase().includes(textToSearch.toLowerCase());
@@ -22,7 +23,7 @@ const findNotes = function (notes, textToSearch) {
     })
 }
 
-console.log(findNotes(notes, 'work'));
+//console.log(findNotes(notes, 'work'));
 
 // const findNote = function (notes, noteTitle) {
 //     const index = notes.findIndex(function (note, index) {
@@ -31,8 +32,5 @@ console.log(findNotes(notes, 'work'));
 //     return notes[index]
 // }
 
-const note = findNote(notes, 'EaTiNg');
+const note = findNotes(notes, 'EaTiNg');
 console.log(note)
-
-//just adding a comment
-//more changesgitommand push to remote
