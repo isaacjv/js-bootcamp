@@ -33,3 +33,6 @@ console.log(findNotes(notes, 'work'));
 
 const note = findNote(notes, 'EaTiNg');
 console.log(note)
+
+//just adding a comment
+//more changesgitommand push to remote
