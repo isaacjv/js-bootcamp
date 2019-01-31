@@ -15,7 +15,17 @@ const todos = [{
     isComplete: false
  }];
 
-// 2. Allow us to remove a to-do by text value
+const sortTodos = function (list) {
+    list.sort( function (a, b) {
+        if(!a.isComplete && b.isComplete) {
+            return -1;
+        } else if (a.isComplete && !b.isComplete) {
+            return 1;
+        } else {
+            return 0;
+        }
+    })
+}
 
 const deleteTodo = function (todoList, task) {
     const index = todos.findIndex(function (todo) {index
@@ -32,5 +42,7 @@ const getThingsToDo = function(todoList) {
     })
 }
 
+sortTodos(todos);
+console.log(todos);
 
-console.log(getThingsToDo(todos));
+//console.log(getThingsToDo(todos));
