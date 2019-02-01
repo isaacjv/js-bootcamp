@@ -7,5 +7,7 @@
 // Query and remove all
 const ps = document.querySelectorAll('p');
 ps.forEach(function (p) {
-    console.log(p.textContent);
+    p.textContent = '******';
+    //console.log(p.textContent);
+    //p.remove();
 })
