@@ -31,3 +31,7 @@ todos.forEach(function(todo){
     newP.textContent = todo.name;
     document.body.appendChild(newP);
 })
+
+document.querySelector('button').addEventListener('click', function(e) {
+    console.log('WHO CLICKED THE BUTTON?!');
+});
